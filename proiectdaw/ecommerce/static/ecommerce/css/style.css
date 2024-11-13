@@ -60,6 +60,23 @@ ul li {
 	box-shadow: 0px 0px 5px #ddd;
 }
 
+h2 {
+	font-size: 1.5em;
+	color: #333;
+}
+
+.produs-pret {
+	font-weight: bold;
+	color: #5cb85c;
+}
+
+.produs-descriere {
+	color: #777;
+	font-size: 1em;
+	margin-top: 10px;
+	line-height: 1.5;
+}
+
 .pagination {
 	text-align: center;
 	margin: 20px 0;
