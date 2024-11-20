@@ -9,25 +9,12 @@
 <body>
     <div class="container">
         <h1>Filtru Produse</h1>
-        <form method="get">
-            <input type="text" name="nume_produs" placeholder="Nume produs" value="{{ request.GET.nume_produs }}">
-            <input type="number" step="0.01" name="pret_min" placeholder="Pret minim" value="{{ request.GET.pret_min }}">
-            <input type="number" step="0.01" name="pret_max" placeholder="Pret maxim" value="{{ request.GET.pret_max }}">
-            <select name="categorie">
-                <option value="">Toate categoriile</option>
-                {% for categorie in categorii %}
-                    {% if categorie.id|stringformat:"s" == request.GET.categorie %}
-                        <option value="{{ categorie.id }}" selected>{{ categorie.nume_categorie }}</option>
-                    {% else %}
-                        <option value="{{ categorie.id }}">{{ categorie.nume_categorie }}</option>
-                    {% endif %}
-                {% endfor %}
-            </select>
+        <form id="filtru-form">
+            {{ form.as_p }}
             <button type="submit">Filtreaza</button>
         </form>
-
-        <ul>
-            {% for produs in pagina.object_list %}
+        <ul id="lista-produse">
+            {% for produs in produse %}
                 <li>
                     <h2>{{ produs.nume_produs }}</h2>
                     <p class="produs-pret">{{ produs.pret }} RON</p>
@@ -35,16 +22,33 @@
                 </li>
             {% endfor %}
         </ul>
-
-        <div class="pagination">
-            {% if pagina.has_previous %}
-                <a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ pagina.previous_page_number }}">Inapoi</a>
-            {% endif %}
-            {% if pagina.has_next %}
-                <a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ pagina.next_page_number }}">Inainte</a>
-            {% endif %}
-        </div>
     </div>
+    <script>
+        const form = document.getElementById('filtru-form');
+        const listaProduse = document.getElementById('lista-produse');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const queryString = new URLSearchParams(formData).toString();
+            fetch(`?${queryString}`, {
+                headers: { 'X-Requested-With': 'XMLHttpRequest' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                listaProduse.innerHTML = '';
+                data.produse.forEach(produs => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <h2>${produs.nume_produs}</h2>
+                        <p class="produs-pret">${produs.pret} RON</p>
+                        <p class="produs-descriere">${produs.descriere}</p>
+                    `;
+                    listaProduse.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Eroare la filtrarea produselor:', error));
+        });
+    </script>
 </body>
 </html>
 

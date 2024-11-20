@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Adaugă Produs</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'ecommerce/css/form.css' %}">
+</head>
+
+<body>
+	<h1>Adaugă un Produs Nou</h1>
+
+	<form method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+
+		<button type="submit">Salvează Produsul</button>
+	</form>
+
+	{% if form.errors %}
+	<ul>
+		{% for field in form %}
+		{% for error in field.errors %}
+		<li>{{ error }}</li>
+		{% endfor %}
+		{% endfor %}
+	</ul>
+	{% endif %}
+</body>
+
+</html>
