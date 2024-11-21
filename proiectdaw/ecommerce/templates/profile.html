@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Deconectat</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'ecommerce/css/form.css' %}">
+</head>
+
+<body>
+	<h1>Bun venit, {{ user_data.username }}!</h1>
+	<h2>Informații personale:</h2>
+	<ul>
+		<li><strong>Username:</strong> {{ user_data.username }}</li>
+		<li><strong>Email:</strong> {{ user_data.email }}</li>
+		<li><strong>Telefon:</strong> {{ user_data.phone_number }}</li>
+		<li><strong>Adresă:</strong> {{ user_data.address }}</li>
+		<li><strong>Oraș:</strong> {{ user_data.city }}</li>
+		<li><strong>Data nașterii:</strong> {{ user_data.date_of_birth }}</li>
+		<li><strong>Vânzător:</strong> {{ user_data.is_seller|yesno:"Da,Nu" }}</li>
+	</ul>
+	<a href="{% url 'change_password' %}">Schimbă parola</a><br>
+	<a href="{% url 'logout' %}">Logout</a>
+</body>
+
+</html>

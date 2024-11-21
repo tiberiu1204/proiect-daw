@@ -8,7 +8,16 @@ import time
 from django.conf import settings
 from .forms import ContactForm, calculate_age
 import re
-from datetime import datetime
+from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.decorators import login_required
+from .forms import CustomUserCreationForm, CustomAuthenticationForm, CustomPasswordChangeForm
+
+
+def homepage(request):
+    if request.user.is_authenticated:
+        return redirect('profile')
+    else:
+        return redirect('login')
 
 
 def filtru_produse(request):
@@ -95,3 +104,71 @@ def adauga_produs(request):
             form = ProdusForm()
 
     return render(request, 'adauga_produs.html', {'form': form})
+
+
+def register_view(request):
+    if request.user.is_authenticated:
+        return redirect('profile')
+    if request.method == 'POST':
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect('profile')
+    else:
+        form = CustomUserCreationForm()
+    return render(request, 'register.html', {'form': form})
+
+
+def login_view(request):
+    if request.user.is_authenticated:
+        return redirect('profile')
+    if request.method == 'POST':
+        form = CustomAuthenticationForm(data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            if not form.cleaned_data.get('remember_me'):
+                request.session.set_expiry(0)
+            else:
+                request.session.set_expiry(86400)
+            return redirect('profile')
+    else:
+        form = CustomAuthenticationForm()
+    return render(request, 'login.html', {'form': form})
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('login')
+
+
+@login_required
+def profile_view(request):
+    if not request.user.is_authenticated:
+        return redirect('login')
+
+    user = request.user
+    user_data = {
+        'username': user.username,
+        'email': user.email,
+        'phone_number': user.phone_number,
+        'address': user.address,
+        'city': user.city,
+        'date_of_birth': user.date_of_birth.strftime('%Y-%m-%d') if user.date_of_birth else None,
+        'is_seller': user.is_seller,
+    }
+    request.session['user_data'] = user_data
+    return render(request, 'profile.html', {'user_data': user_data})
+
+
+@login_required
+def change_password_view(request):
+    if request.method == 'POST':
+        form = CustomPasswordChangeForm(user=request.user, data=request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('profile')
+    else:
+        form = CustomPasswordChangeForm(user=request.user)
+    return render(request, 'change_password.html', {'form': form})

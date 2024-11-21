@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Autentificare</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'ecommerce/css/form.css' %}">
+</head>
+
+<body>
+	<h1>Autentificare</h1>
+	<form method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit">Autentificare</button>
+	</form>
+	<p>Nu ai cont? <a href="{% url 'register' %}">Înregistrează-te aici</a>.</p>
+</body>
+
+</html>

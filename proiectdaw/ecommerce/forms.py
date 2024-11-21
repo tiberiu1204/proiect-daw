@@ -1,8 +1,11 @@
 from django import forms
+from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm
 from .models import Categorie, Produs
 from django.core.exceptions import ValidationError
 import re
 from datetime import date, datetime
+from django.contrib.auth.forms import UserCreationForm
+from .models import CustomUser
 
 
 class FiltruProduseForm(forms.Form):
@@ -171,3 +174,47 @@ class ProdusForm(forms.ModelForm):
         if commit:
             instance.save()
         return instance
+
+
+class CustomUserCreationForm(UserCreationForm):
+    phone_number = forms.CharField(required=True, max_length=15)
+    address = forms.CharField(widget=forms.Textarea, required=True)
+    city = forms.CharField(max_length=100, required=True)
+    date_of_birth = forms.DateField(
+        required=True, widget=forms.DateInput(attrs={'type': 'date'}))
+    is_seller = forms.BooleanField(required=False)
+
+    class Meta:
+        model = CustomUser
+        fields = ['username', 'email', 'phone_number', 'address',
+                  'city', 'date_of_birth', 'is_seller', 'password1', 'password2']
+
+    def clean_phone_number(self):
+        phone = self.cleaned_data.get('phone_number')
+        if not phone.isdigit():
+            raise forms.ValidationError(
+                "Numărul de telefon trebuie să conțină doar cifre.")
+        return phone
+
+    def clean_date_of_birth(self):
+        dob = self.cleaned_data.get('date_of_birth')
+        from datetime import date
+        if dob >= date.today():
+            raise forms.ValidationError(
+                "Data nașterii trebuie să fie în trecut.")
+        return dob
+
+    def clean_city(self):
+        city = self.cleaned_data.get('city')
+        if len(city) < 3:
+            raise forms.ValidationError(
+                "Orașul trebuie să aibă cel puțin 3 caractere.")
+        return city
+
+
+class CustomAuthenticationForm(AuthenticationForm):
+    remember_me = forms.BooleanField(required=False, label="Ține-mă minte")
+
+
+class CustomPasswordChangeForm(PasswordChangeForm):
+    pass

@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Deconectat</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'ecommerce/css/form.css' %}">
+</head>
+
+<body>
+	<h1>Te-ai deconectat cu succes.</h1>
+	<p><a href="{% url 'login' %}">Autentifică-te din nou</a> dacă dorești să revii.</p>
+</body>
+
+</html>
