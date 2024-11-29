@@ -134,8 +134,7 @@ class ProdusForm(forms.ModelForm):
         model = Produs
         fields = ['nume_produs', 'descriere', 'pret', 'categorie']
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self):
         self.fields['nume_produs'].label = "Numele Produsului"
         self.fields['nume_produs'].error_messages = {
             'required': 'Acest câmp este obligatoriu!'}
@@ -183,10 +182,12 @@ class CustomUserCreationForm(UserCreationForm):
     date_of_birth = forms.DateField(
         required=True, widget=forms.DateInput(attrs={'type': 'date'}))
     is_seller = forms.BooleanField(required=False)
+    cod = None
+    email_confirmat = False
 
     class Meta:
         model = CustomUser
-        fields = ['username', 'email', 'phone_number', 'address',
+        fields = ['first_name', 'last_name', 'username', 'email', 'phone_number', 'address',
                   'city', 'date_of_birth', 'is_seller', 'password1', 'password2']
 
     def clean_phone_number(self):

@@ -30,7 +30,18 @@ ALLOWED_HOSTS = []
 AUTH_USER_MODEL = 'ecommerce.CustomUser'
 LOGIN_URL = '/login/'
 
+# Email
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'proiect.daw.node@gmail.com'
+EMAIL_HOST_PASSWORD = 'qmyli klqw atjv tegi'
+DEFAULT_FROM_EMAIL = 'Da-Boss <proiect.daw.node@gmail.com>'
+
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',

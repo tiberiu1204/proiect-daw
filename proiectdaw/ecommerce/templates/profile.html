@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Deconectat</title>
+	<title>Profil</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'ecommerce/css/form.css' %}">
 </head>
 
@@ -12,6 +12,8 @@
 	<h1>Bun venit, {{ user_data.username }}!</h1>
 	<h2>Informații personale:</h2>
 	<ul>
+		<li><strong>Nume:</strong> {{ user_data.nume }}</li>
+		<li><strong>Prenume:</strong> {{ user_data.prenume }}</li>
 		<li><strong>Username:</strong> {{ user_data.username }}</li>
 		<li><strong>Email:</strong> {{ user_data.email }}</li>
 		<li><strong>Telefon:</strong> {{ user_data.phone_number }}</li>

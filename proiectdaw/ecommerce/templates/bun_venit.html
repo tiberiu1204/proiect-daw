@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Bun venit!</title>
+</head>
+
+<body>
+	<h1>Bun venit!</h1>
+	<p>Salut, {{ nume }} {{ prenume }}!</p>
+	<p>Suntem bucuroși că te-ai înregistrat pe platforma noastră. Username-ul tău este: <strong>{{ username }}</strong>.
+	</p>
+	<p>Te rugăm să confirmi adresa ta de e-mail pentru a-ți activa contul. Apasă pe linkul de mai jos:</p>
+	<p>
+		<a href="{{ site_url }}/confirma_mail/{{ cod }}" target="_blank">
+			Confirmați adresa de e-mail
+		</a>
+	</p>
+	<p>Dacă linkul nu funcționează, poți să copiezi și să lipești următorul URL în browser:</p>
+	<p>{{ site_url }}/confirma_mail/{{ cod }}</p>
+	<img src="{{ url_imagine }}">
+</body>
+
+</html>

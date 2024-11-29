@@ -8,6 +8,8 @@ class CustomUser(AbstractUser):
     city = models.CharField(max_length=100, blank=True, null=True)
     date_of_birth = models.DateField(blank=True, null=True)
     is_seller = models.BooleanField(default=False)
+    cod = models.CharField(max_length=100, null=True)
+    email_confirmat = models.BooleanField(default=False, null=False)
 
     def __str__(self):
         return self.username

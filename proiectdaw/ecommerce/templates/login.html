@@ -12,6 +12,9 @@
 	<h1>Autentificare</h1>
 	<form method="post">
 		{% csrf_token %}
+		{% if error %}
+			<li>{{ error }}</li>
+		{% endif %}
 		{{ form.as_p }}
 		<button type="submit">Autentificare</button>
 	</form>

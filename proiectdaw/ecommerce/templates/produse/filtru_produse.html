@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -22,10 +23,20 @@
                 </li>
             {% endfor %}
         </ul>
+        <div id="paginare">
+            {% if produse.has_previous %}
+                <button data-page="{{ produse.previous_page_number }}">Înapoi</button>
+            {% endif %}
+            <span>Pagina {{ produse.number }} din {{ produse.paginator.num_pages }}</span>
+            {% if produse.has_next %}
+                <button data-page="{{ produse.next_page_number }}">Înainte</button>
+            {% endif %}
+        </div>
     </div>
     <script>
         const form = document.getElementById('filtru-form');
         const listaProduse = document.getElementById('lista-produse');
+        const paginare = document.getElementById('paginare');
         form.addEventListener('submit', function(event) {
             event.preventDefault();
             const formData = new FormData(form);
@@ -45,8 +56,63 @@
                     `;
                     listaProduse.appendChild(li);
                 });
+                paginare.innerHTML = '';
+                if (data.has_previous) {
+                    const backButton = document.createElement('button');
+                    backButton.textContent = 'Înapoi';
+                    backButton.dataset.page = data.current_page - 1;
+                    paginare.appendChild(backButton);
+                }
+                const pageInfo = document.createElement('span');
+                pageInfo.textContent = `Pagina ${data.current_page} din ${data.num_pages}`;
+                paginare.appendChild(pageInfo);
+                if (data.has_next) {
+                    const nextButton = document.createElement('button');
+                    nextButton.textContent = 'Înainte';
+                    nextButton.dataset.page = data.current_page + 1;
+                    paginare.appendChild(nextButton);
+                }
             })
             .catch(error => console.error('Eroare la filtrarea produselor:', error));
+        });
+        paginare.addEventListener('click', function(event) {
+            if (event.target.tagName === 'BUTTON') {
+                const page = event.target.dataset.page;
+                const formData = new FormData(form);
+                const queryString = new URLSearchParams(formData).toString();
+                fetch(`?page=${page}&${queryString}`, {
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    listaProduse.innerHTML = '';
+                    data.produse.forEach(produs => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `
+                            <h2>${produs.nume_produs}</h2>
+                            <p class="produs-pret">${produs.pret} RON</p>
+                            <p class="produs-descriere">${produs.descriere}</p>
+                        `;
+                        listaProduse.appendChild(li);
+                    });
+                    paginare.innerHTML = '';
+                    if (data.has_previous) {
+                        const backButton = document.createElement('button');
+                        backButton.textContent = 'Înapoi';
+                        backButton.dataset.page = data.current_page - 1;
+                        paginare.appendChild(backButton);
+                    }
+                    const pageInfo = document.createElement('span');
+                    pageInfo.textContent = `Pagina ${data.current_page} din ${data.num_pages}`;
+                    paginare.appendChild(pageInfo);
+                    if (data.has_next) {
+                        const nextButton = document.createElement('button');
+                        nextButton.textContent = 'Înainte';
+                        nextButton.dataset.page = data.current_page + 1;
+                        paginare.appendChild(nextButton);
+                    }
+                });
+            }
         });
     </script>
 </body>
