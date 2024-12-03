@@ -1,3 +1,4 @@
+from .models import Categorie
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm
 from .models import Categorie, Produs
@@ -5,7 +6,7 @@ from django.core.exceptions import ValidationError
 import re
 from datetime import date, datetime
 from django.contrib.auth.forms import UserCreationForm
-from .models import CustomUser
+from .models import CustomUser, Promotie
 
 
 class FiltruProduseForm(forms.Form):
@@ -23,8 +24,10 @@ class FiltruProduseForm(forms.Form):
     )
 
 
-def text_validator(value):
-    if not value.istitle() or not value.replace(' ', '').isalpha():
+def text_validator(value: str):
+    if not value:
+        return
+    if not value[0].isupper() or not value.replace(' ', '').isalpha():
         raise ValidationError(
             'Textul trebuie să înceapă cu literă mare și să conțină doar litere și spații.')
 
@@ -127,49 +130,68 @@ class ContactForm(forms.Form):
 
 
 class ProdusForm(forms.ModelForm):
-    pret_discount = forms.DecimalField(
-        max_digits=10, decimal_places=2, required=False, help_text="Introduceți discount-ul (în %) pentru produs.")
+    discount = forms.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        required=False,
+        help_text="Introduceți discount-ul (în %) pentru produs."
+    )
+    pret_baza = forms.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        required=True
+    )
 
     class Meta:
         model = Produs
-        fields = ['nume_produs', 'descriere', 'pret', 'categorie']
+        fields = ['nume_produs', 'descriere', 'categorie']
 
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self.fields['nume_produs'].label = "Numele Produsului"
         self.fields['nume_produs'].error_messages = {
             'required': 'Acest câmp este obligatoriu!'}
         self.fields['descriere'].label = "Descriere Produs"
-        self.fields['pret'].label = "Preț Produs"
+        self.fields['descriere'].error_messages = {
+            'required': 'Acest câmp este obligatoriu!'}
         self.fields['categorie'].label = "Categorie Produs"
+        self.fields['categorie'].error_messages = {
+            'required': 'Acest câmp este obligatoriu!'}
 
-    def clean_pret(self):
-        pret = self.cleaned_data.get('pret')
-        if pret <= 0:
+    def clean_pret_baza(self):
+        pret_baza = self.cleaned_data.get('pret_baza')
+        if pret_baza <= 0:
             raise forms.ValidationError(
-                "Prețul trebuie să fie mai mare decât 0.")
-        return pret
+                "Prețul de baza trebuie să fie mai mare decât 0.")
+        return pret_baza
 
     def clean(self):
         cleaned_data = super().clean()
-        pret = cleaned_data.get("pret")
-        pret_discount = cleaned_data.get("pret_discount")
+        pret_baza = cleaned_data.get("pret_baza")
+        discount = cleaned_data.get("discount")
+        nume_produs = cleaned_data.get("nume_produs")
 
-        if pret_discount is not None and (pret_discount < 0 or pret_discount > 100):
-            self.add_error('pret_discount',
+        if not nume_produs[0].isupper():
+            self.add_error('nume_produs',
+                           "Numele produsului trebuie sa inceapa cu litera mare.")
+
+        if discount is not None and (discount < 0 or discount > 100):
+            self.add_error('discount',
                            "Discount-ul trebuie să fie între 0 și 100.")
 
-        if pret_discount is not None and pret is not None:
-            if pret_discount > 0 and pret < (pret * (1 - pret_discount / 100)):
+        if discount is not None and pret_baza is not None:
+            if pret_baza * discount / 100 > 1000:
                 self.add_error(
-                    'pret', "Prețul nu poate fi mai mic decât prețul cu discount aplicat.")
+                    'discount', "Cuantumul reducerii nu poate depasii 1000 RON.")
 
         return cleaned_data
 
     def save(self, commit=True):
         instance = super().save(commit=False)
-        if self.cleaned_data.get('pret_discount'):
-            discount = self.cleaned_data.get('pret_discount')
-            instance.pret = instance.pret * (1 - discount / 100)
+        if self.cleaned_data.get('discount'):
+            discount = self.cleaned_data.get('discount')
+            instance.pret = self.cleaned_data.get(
+                'pret_baza') * (1 - discount / 100)
         if commit:
             instance.save()
         return instance
@@ -219,3 +241,19 @@ class CustomAuthenticationForm(AuthenticationForm):
 
 class CustomPasswordChangeForm(PasswordChangeForm):
     pass
+
+
+class PromotieForm(forms.ModelForm):
+    class Meta:
+        model = Promotie
+        fields = ['nume', 'subiect', 'data_expirare',
+                  'categorii', 'procent_discount']
+        widgets = {
+            'data_expirare': forms.DateTimeInput(attrs={'type': 'datetime-local'}),
+        }
+    categorii = forms.ModelMultipleChoiceField(
+        queryset=Categorie.objects.filter(
+            nume_categorie__in=['Auto', 'Electronice']),
+        widget=forms.CheckboxSelectMultiple,
+        label="Categorii"
+    )

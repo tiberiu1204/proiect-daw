@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.conf import settings
 
 
 class CustomUser(AbstractUser):
@@ -32,6 +33,33 @@ class Produs(models.Model):
 
     def __str__(self):
         return self.nume_produs
+
+
+class Promotie(models.Model):
+    nume = models.CharField(max_length=255)
+    data_creare = models.DateTimeField(
+        auto_now_add=True)
+    data_expirare = models.DateTimeField(verbose_name="Data expirării")
+    subiect = models.CharField(max_length=255)
+    categorii = models.ManyToManyField(Categorie)
+    procent_discount = models.DecimalField(max_digits=5, decimal_places=2)
+
+    def __str__(self):
+        return self.nume
+
+
+class Vizualizare(models.Model):
+    utilizator = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    produs = models.ForeignKey(Produs, on_delete=models.CASCADE)
+    data_vizualizarii = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-data_vizualizarii']
+        unique_together = ('utilizator', 'produs')
+
+    def __str__(self):
+        return f"{self.utilizator.username} a vizualizat {self.produs.nume_produs} la {self.data_vizualizarii}"
 
 
 class Stoc(models.Model):

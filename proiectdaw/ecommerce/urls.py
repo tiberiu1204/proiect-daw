@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import register_view, login_view, logout_view, profile_view, change_password_view, homepage, confirmation_view, email_confirmat
+from .views import register_view, login_view, logout_view, profile_view, change_password_view, homepage, confirmation_view, email_confirmat, promotii
 from . import views
 
 urlpatterns = [
@@ -14,4 +14,5 @@ urlpatterns = [
     path('change-password/', change_password_view, name='change_password'),
     path('confirmation-sent/', confirmation_view, name='confirmation_view'),
     path('confirma-mail/<str:cod>/', email_confirmat, name='email_confirmat'),
+    path('promotii/', promotii, name='promotii'),
 ]

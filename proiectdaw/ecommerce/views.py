@@ -12,11 +12,16 @@ import time
 from django.conf import settings
 from .forms import ContactForm, calculate_age
 import re
-from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
-from .forms import CustomUserCreationForm, CustomAuthenticationForm, CustomPasswordChangeForm
+from .forms import CustomUserCreationForm, CustomAuthenticationForm, CustomPasswordChangeForm, PromotieForm
 from django.core.paginator import Paginator
-from .models import CustomUser
+from .models import CustomUser, Produs, Vizualizare, Promotie, Categorie
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from django.core.mail import send_mass_mail
+from django.db.models import Count
+from django.utils.html import strip_tags
 
 
 def homepage(request):
@@ -26,7 +31,11 @@ def homepage(request):
         return redirect('login')
 
 
+@login_required
 def filtru_produse(request):
+    if not request.user.is_authenticated:
+        return redirect('login')
+
     form = FiltruProduseForm(request.GET or None)
     produse = Produs.objects.all()
 
@@ -48,6 +57,19 @@ def filtru_produse(request):
     paginator = Paginator(produse, 5)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
+
+    N = 10
+
+    for produs in page_obj:
+        Vizualizare.objects.update_or_create(
+            utilizator=request.user,
+            produs=produs,
+        )
+
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+    if vizualizari.count() > N:
+        ids_to_delete = Vizualizare.objects.values_list('id', flat=True)[N:]
+        Vizualizare.objects.filter(id__in=ids_to_delete).delete()
 
     if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
         produse_data = [
@@ -112,6 +134,7 @@ def contact_view(request):
     return render(request, 'contact.html', {'form': form})
 
 
+@login_required
 def adauga_produs(request):
     form = ProdusForm()
     if request.method == 'POST':
@@ -119,8 +142,6 @@ def adauga_produs(request):
         if form.is_valid():
             form.save()
             return redirect('filtru_produse')
-        else:
-            form = ProdusForm()
 
     return render(request, 'adauga_produs.html', {'form': form})
 
@@ -177,11 +198,22 @@ def login_view(request):
             user = form.get_user()
             if not user.email_confirmat:
                 return render(request, 'login.html', {'form': form, 'error': "Eroare: Emailul dvs. nu a fost confirmat"})
-            login(request, user)
             if not form.cleaned_data.get('remember_me'):
                 request.session.set_expiry(0)
             else:
                 request.session.set_expiry(86400)
+            login(request, user)
+            request.session['user_data'] = {
+                'prenume': user.first_name,
+                'nume': user.last_name,
+                'username': user.username,
+                'email': user.email,
+                'phone_number': user.phone_number,
+                'address': user.address,
+                'city': user.city,
+                'date_of_birth': user.date_of_birth.strftime('%Y-%m-%d') if user.date_of_birth else None,
+                'is_seller': user.is_seller,
+            }
             return redirect('profile')
     else:
         form = CustomAuthenticationForm()
@@ -202,19 +234,7 @@ def profile_view(request):
     if not request.user.is_authenticated:
         return redirect('login')
 
-    user = request.user
-    user_data = {
-        'prenume': user.first_name,
-        'nume': user.last_name,
-        'username': user.username,
-        'email': user.email,
-        'phone_number': user.phone_number,
-        'address': user.address,
-        'city': user.city,
-        'date_of_birth': user.date_of_birth.strftime('%Y-%m-%d') if user.date_of_birth else None,
-        'is_seller': user.is_seller,
-    }
-    request.session['user_data'] = user_data
+    user_data = request.session['user_data']
     return render(request, 'profile.html', {'user_data': user_data})
 
 
@@ -228,3 +248,62 @@ def change_password_view(request):
     else:
         form = CustomPasswordChangeForm(user=request.user)
     return render(request, 'change_password.html', {'form': form})
+
+
+@login_required
+def promotii(request):
+    if request.method == 'POST':
+        form = PromotieForm(request.POST)
+        if form.is_valid():
+            promotie = form.save()
+
+            K = 5
+
+            email_messages = []
+            for categorie in promotie.categorii.all():
+
+                utilizatori = (
+                    Vizualizare.objects
+                    .filter(produs__categorie=categorie)
+                    .values('utilizator')
+                    .annotate(vizualizari_count=Count('id'))
+                    .filter(vizualizari_count__gte=K)
+                )
+
+                utilizatori_emails = [
+                    CustomUser.objects.get(id=utilizator['utilizator']).email
+                    for utilizator in utilizatori
+                ]
+
+                if utilizatori_emails:
+                    for email in utilizatori_emails:
+                        if categorie.nume_categorie == 'Auto':
+                            template_name = 'promotie_auto.html'
+                        elif categorie.nume_categorie == 'Electronice':
+                            template_name = 'promotie_electronice.html'
+                        else:
+                            continue
+
+                        context = {
+                            'subiect': promotie.subiect,
+                            'procent_discount': promotie.procent_discount,
+                            'data_expirare': promotie.data_expirare
+                        }
+
+                        email_content = render_to_string(
+                            template_name, context)
+                        email_subject = f"O nouă promoție pentru produsele din categoria {
+                            categorie.nume_categorie}"
+                        message = (email_subject, email_content,
+                                   'proiect.daw.node@gmail.com', [email])
+
+                        email_messages.append(message)
+
+            if email_messages:
+                send_mass_mail(email_messages)
+
+            return redirect('/produse')
+    else:
+        form = PromotieForm()
+
+    return render(request, 'promotii.html', {'form': form})

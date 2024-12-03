@@ -72,6 +72,7 @@
                     nextButton.dataset.page = data.current_page + 1;
                     paginare.appendChild(nextButton);
                 }
+								window.history.pushState({}, '', `?${queryString}`);
             })
             .catch(error => console.error('Eroare la filtrarea produselor:', error));
         });
@@ -111,6 +112,7 @@
                         nextButton.dataset.page = data.current_page + 1;
                         paginare.appendChild(nextButton);
                     }
+										window.history.pushState({}, '', `?page=${page}&${queryString}`);
                 });
             }
         });
