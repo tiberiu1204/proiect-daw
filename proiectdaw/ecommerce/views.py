@@ -1,5 +1,5 @@
 from django.template.loader import render_to_string
-from django.core.mail import EmailMessage
+from django.core.mail import EmailMessage, send_mass_mail, mail_admins
 import random
 import string
 from django.http import JsonResponse
@@ -19,22 +19,28 @@ from django.core.paginator import Paginator
 from .models import CustomUser, Produs, Vizualizare, Promotie, Categorie
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from django.core.mail import send_mass_mail
 from django.db.models import Count
 from django.utils.html import strip_tags
+from django.utils.timezone import now
+from django.core.exceptions import ValidationError
+import logging
+
+logger = logging.getLogger('django')
 
 
 def homepage(request):
+    logger.info("Cineva a accesat /")
     if request.user.is_authenticated:
-        return redirect('profile')
+        return redirect('/profile')
     else:
-        return redirect('login')
+        return redirect('/login')
 
 
 @login_required
 def filtru_produse(request):
+    logger.info("Cineva a accesat /produse")
     if not request.user.is_authenticated:
-        return redirect('login')
+        return redirect('/login')
 
     form = FiltruProduseForm(request.GET or None)
     produse = Produs.objects.all()
@@ -124,7 +130,7 @@ def contact_view(request):
             timestamp = int(time.time())
             file_path = os.path.join(folder, f"mesaj_{timestamp}.json")
             with open(file_path, 'w', encoding='utf-8') as f:
-                json.dump(mesaj_data, f, ensure_ascii=False, indent=4)
+                json.dump(mesaj_data, f)
 
             return render(request, 'contact_succes.html')
 
@@ -141,9 +147,24 @@ def adauga_produs(request):
         form = ProdusForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('filtru_produse')
+            return redirect('/filtru_produse')
 
     return render(request, 'adauga_produs.html', {'form': form})
+
+
+def imparte_la_0():
+    try:
+        result = 10 / 0
+        return result
+    except Exception as e:
+        error_message = str(e)
+        mail_admins(
+            subject="Eroare în aplicație",
+            message=f"Eroare: {error_message}",
+            html_message=f"<h1 style='color: red;'>Eroare în aplicație</h1><div style='background-color: red; color: white'>{
+                error_message}</div>",
+        )
+        return None
 
 
 def register_view(request):
@@ -156,12 +177,37 @@ def register_view(request):
         )
         email.content_subtype = 'html'
         email.send(fail_silently=False)
+        logger.debug(f"Confirmation sent to {dest}")
 
     if request.user.is_authenticated:
-        return redirect('profile')
+        return redirect('/profile')
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
-        if form.is_valid():
+
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        if username.lower() == 'admin':
+            logger.critical("Un borfas incearca sa ne fure")
+            mail_admins(
+                subject="Cineva incearca sa ne preia site-ul",
+                message=f"Email: {email}",
+                html_message=f"<h1 style='color: red;'>Cineva incearca sa ne preia site-ul</h1> \
+                        <p>Email: {email}</p>",
+            )
+            try:
+                raise ValidationError("Nu mai fura ba bborfasule!")
+            except Exception as e:
+                error_message = str(e)
+                mail_admins(
+                    subject="Eroare în aplicație",
+                    message=f"Eroare: {error_message}",
+                    html_message=f"<h1 style='color: red;'>Eroare în aplicație</h1><div style='background-color: red; color: white'>{
+                        error_message}</div>",
+                )
+                logger.critical("Un borfas a fost identificat cu succes")
+
+        elif form.is_valid():
+            logger.debug("User form is valid")
             form.instance.cod = ''.join(random.choices(string.ascii_uppercase +
                                                        string.digits, k=100))
             user = form.save()
@@ -172,7 +218,7 @@ def register_view(request):
                        "cod": user.cod,
                        "url_imagine": f"{request.get_host()}{settings.STATIC_URL}ecommerce/photos/cat.jpeg"}
             send_confirmation_mail(context, user.email)
-            return redirect('confirmation-sent')
+            return redirect('/confirmation-sent')
     else:
         form = CustomUserCreationForm()
     return render(request, 'register.html', {'form': form})
@@ -186,17 +232,25 @@ def email_confirmat(request, cod):
         return render(request, 'email_confirmat.html')
 
     except CustomUser.DoesNotExist:
+        logger.error("Userul nu exista")
         return render(request, "404.html")
 
 
+failed_logins = {}
+
+
 def login_view(request):
+    global failed_logins
+
     if request.user.is_authenticated:
-        return redirect('profile')
+        return redirect('/profile')
     if request.method == 'POST':
         form = CustomAuthenticationForm(data=request.POST)
         if form.is_valid():
             user = form.get_user()
+            failed_logins.pop(user.username, None)
             if not user.email_confirmat:
+                logger.error("Userul nu a fost confirmat")
                 return render(request, 'login.html', {'form': form, 'error': "Eroare: Emailul dvs. nu a fost confirmat"})
             if not form.cleaned_data.get('remember_me'):
                 request.session.set_expiry(0)
@@ -214,7 +268,31 @@ def login_view(request):
                 'date_of_birth': user.date_of_birth.strftime('%Y-%m-%d') if user.date_of_birth else None,
                 'is_seller': user.is_seller,
             }
-            return redirect('profile')
+            return redirect('/profile')
+        else:
+            username = request.POST.get('username')
+            failed_logins[username] = failed_logins.get(username, [])
+            failed_logins[username].append(now())
+            failed_logins[username] = [
+                t for t in failed_logins[username]
+                if (now() - t).seconds < 120
+            ]
+            logger.warning(f"Userul {username} nu a reusit sa se logheze")
+            if len(failed_logins[username]) >= 3:
+                mail_admins(
+                    subject="Logari suspecte",
+
+                    message=f"Logari suspecte\n \
+                    Username: {username}\n \
+                    Ip: {request.META.get('REMOTE_ADDR')}",
+
+                    html_message=f"<h1 style='colusernameor: red;'>Logari suspecte</h1> \
+                    <p>Username: {username}</p> \
+                    <p>Ip: {request.META.get('REMOTE_ADDR')}</p>",
+                )
+                logger.warning(
+                    f"Activitate suspicioasa pentru userul {username}")
+
     else:
         form = CustomAuthenticationForm()
     return render(request, 'login.html', {'form': form})
@@ -226,13 +304,13 @@ def confirmation_view(request):
 
 def logout_view(request):
     logout(request)
-    return redirect('login')
+    return redirect('/login')
 
 
 @login_required
 def profile_view(request):
     if not request.user.is_authenticated:
-        return redirect('login')
+        return redirect('/login')
 
     user_data = request.session['user_data']
     return render(request, 'profile.html', {'user_data': user_data})
@@ -244,7 +322,7 @@ def change_password_view(request):
         form = CustomPasswordChangeForm(user=request.user, data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect('profile')
+            return redirect('/profile')
     else:
         form = CustomPasswordChangeForm(user=request.user)
     return render(request, 'change_password.html', {'form': form})

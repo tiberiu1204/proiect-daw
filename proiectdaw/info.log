@@ -1,0 +1,41 @@
+INFO 2024-12-04 16:23:39,025 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:23:40,531 views Cineva a accesat /
+INFO 2024-12-04 16:23:40,539 basehttp "GET / HTTP/1.1" 302 0
+INFO 2024-12-04 16:23:40,552 basehttp "GET /login HTTP/1.1" 301 0
+INFO 2024-12-04 16:23:40,564 basehttp "GET /login/ HTTP/1.1" 200 1054
+INFO 2024-12-04 16:24:21,461 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:24:21,681 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:24:24,633 basehttp "GET /produse/ HTTP/1.1" 302 0
+INFO 2024-12-04 16:24:24,643 basehttp "GET /login/?next=/produse/ HTTP/1.1" 200 1054
+INFO 2024-12-04 16:26:11,564 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:26:11,771 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:26:14,889 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:26:15,102 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:26:39,371 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:26:39,589 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:26:41,704 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:26:41,913 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:26:50,068 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:26:50,273 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:27:31,649 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:27:31,853 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:27:51,075 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:27:51,289 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:28:19,608 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:28:19,820 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:29:22,284 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:29:22,512 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:29:26,636 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:29:26,846 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:29:40,016 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:29:40,231 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:29:59,414 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:29:59,629 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:30:41,014 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:30:41,220 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:30:42,340 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:30:42,550 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:32:24,302 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:32:24,508 autoreload Watching for file changes with StatReloader
+INFO 2024-12-04 16:32:26,634 autoreload /home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py changed, reloading.
+INFO 2024-12-04 16:32:26,856 autoreload Watching for file changes with StatReloader
