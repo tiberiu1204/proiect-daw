@@ -197,6 +197,26 @@ class ProdusForm(forms.ModelForm):
         return instance
 
 
+class CustomUserModeratorFrom(forms.ModelForm):
+    class Meta:
+        model = CustomUser
+        fields = ['last_name', 'first_name', 'email', 'blocat']
+
+    def __init__(self, *args, **kwargs):
+        self.user = kwargs.pop('user', None)
+        super().__init__(*args, **kwargs)
+
+        if self.user:
+            if not self.user.has_perm('ecommerce.change_user'):
+                for field in self.fields:
+                    field.widget.attrs['readonly'] = True
+            if self.user.has_perm('ecommerce.moderator'):
+                self.fields['last_name'].widget.attrs['readonly'] = True
+                self.fields['first_name'].widget.attrs['readonly'] = True
+                self.fields['email'].widget.attrs['readonly'] = True
+                self.fields['blocat'].widget.attrs['readonly'] = True
+
+
 class CustomUserCreationForm(UserCreationForm):
     phone_number = forms.CharField(required=True, max_length=15)
     address = forms.CharField(widget=forms.Textarea, required=True)

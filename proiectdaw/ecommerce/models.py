@@ -11,6 +11,16 @@ class CustomUser(AbstractUser):
     is_seller = models.BooleanField(default=False)
     cod = models.CharField(max_length=100, null=True)
     email_confirmat = models.BooleanField(default=False, null=False)
+    blocat = models.BooleanField(default=False, null=False)
+
+    class Meta:
+        permissions = [
+            ('vizualizeaza_oferta', 'Poate vizualiza oferta reducere 50%'),
+            ('change_nume', 'Poate edita nume'),
+            ('change_prenume', 'Poate edita prenume'),
+            ('change_email', 'Poate e-mail'),
+            ('change_blocat', 'Poate edita blocat')
+        ]
 
     def __str__(self):
         return self.username

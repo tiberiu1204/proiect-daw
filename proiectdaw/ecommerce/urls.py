@@ -15,4 +15,7 @@ urlpatterns = [
     path('confirmation-sent/', confirmation_view, name='confirmation_view'),
     path('confirma-mail/<str:cod>/', email_confirmat, name='email_confirmat'),
     path('promotii/', promotii, name='promotii'),
+    path('aloca_permisiune_oferta/', views.aloca_permisiune_oferta,
+         name='aloca_permisiune_oferta'),
+    path('oferta/', views.oferta, name='oferta'),
 ]

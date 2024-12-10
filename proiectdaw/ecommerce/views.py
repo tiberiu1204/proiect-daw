@@ -1,4 +1,5 @@
 from django.template.loader import render_to_string
+from django.http import HttpResponseForbidden, JsonResponse
 from django.core.mail import EmailMessage, send_mass_mail, mail_admins
 import random
 import string
@@ -24,6 +25,10 @@ from django.utils.html import strip_tags
 from django.utils.timezone import now
 from django.core.exceptions import ValidationError
 import logging
+from django.contrib.auth.signals import user_logged_in
+from django.dispatch import receiver
+from django.contrib.auth.models import Permission
+
 
 logger = logging.getLogger('django')
 
@@ -36,11 +41,8 @@ def homepage(request):
         return redirect('/login')
 
 
-@login_required
 def filtru_produse(request):
     logger.info("Cineva a accesat /produse")
-    if not request.user.is_authenticated:
-        return redirect('/login')
 
     form = FiltruProduseForm(request.GET or None)
     produse = Produs.objects.all()
@@ -66,16 +68,17 @@ def filtru_produse(request):
 
     N = 10
 
-    for produs in page_obj:
-        Vizualizare.objects.update_or_create(
-            utilizator=request.user,
-            produs=produs,
-        )
-
-    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
-    if vizualizari.count() > N:
-        ids_to_delete = Vizualizare.objects.values_list('id', flat=True)[N:]
-        Vizualizare.objects.filter(id__in=ids_to_delete).delete()
+    if request.user.is_authenticated:
+        for produs in page_obj:
+            Vizualizare.objects.update_or_create(
+                utilizator=request.user,
+                produs=produs,
+            )
+        vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+        if vizualizari.count() > N:
+            ids_to_delete = Vizualizare.objects.values_list('id', flat=True)[
+                N:]
+            Vizualizare.objects.filter(id__in=ids_to_delete).delete()
 
     if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
         produse_data = [
@@ -97,6 +100,7 @@ def filtru_produse(request):
     return render(request, 'produse/filtru_produse.html', {
         'form': form,
         'produse': page_obj,
+        'user': request.user
     })
 
 
@@ -142,6 +146,14 @@ def contact_view(request):
 
 @login_required
 def adauga_produs(request):
+    if not request.user.has_perm('ecommerce.add_produs'):
+        return HttpResponseForbidden(
+            render(request, '403.html', {
+                'user': request.user,
+                'titlu': 'Eroare adăugare produse',
+                'mesaj_personalizat': 'Nu ai voie să adaugi produse pe site.'
+            })
+        )
     form = ProdusForm()
     if request.method == 'POST':
         form = ProdusForm(request.POST)
@@ -252,6 +264,12 @@ def login_view(request):
             if not user.email_confirmat:
                 logger.error("Userul nu a fost confirmat")
                 return render(request, 'login.html', {'form': form, 'error': "Eroare: Emailul dvs. nu a fost confirmat"})
+            if user.blocat:
+                return HttpResponseForbidden(render(request, '403.html', {
+                    'user': request.user,
+                    'titlu': 'Cont blocat',
+                    'mesaj_personalizat': 'Contul dvs este blocat'
+                }))
             if not form.cleaned_data.get('remember_me'):
                 request.session.set_expiry(0)
             else:
@@ -303,6 +321,8 @@ def confirmation_view(request):
 
 
 def logout_view(request):
+    permission = Permission.objects.get(codename='vizualizeaza_oferta')
+    request.user.user_permissions.remove(permission)
     logout(request)
     return redirect('/login')
 
@@ -385,3 +405,38 @@ def promotii(request):
         form = PromotieForm()
 
     return render(request, 'promotii.html', {'form': form})
+
+
+@receiver(user_logged_in)
+def save_user_data_in_session(sender, request, user, **kwargs):
+    request.session['user_data'] = {
+        'prenume': user.first_name,
+        'nume': user.last_name,
+        'username': user.username,
+        'email': user.email,
+        'phone_number': user.phone_number,
+        'address': user.address,
+        'city': user.city,
+        'date_of_birth': user.date_of_birth.strftime('%Y-%m-%d') if user.date_of_birth else None,
+        'is_seller': user.is_seller,
+    }
+
+
+def aloca_permisiune_oferta(request):
+    if request.method == "POST":
+        permission = Permission.objects.get(codename='vizualizeaza_oferta')
+        if request.user.is_authenticated:
+            request.user.user_permissions.add(permission)
+            return JsonResponse({"success": True})
+
+    return JsonResponse({"success": False}, status=400)
+
+
+def oferta(request):
+    if not request.user.has_perm('ecommerce.vizualizeaza_oferta'):
+        return HttpResponseForbidden(render(request, '403.html', {
+            'user': request.user,
+            'titlu': 'Eroare afisare oferta',
+            'mesaj_personalizat': 'Nu ai voie să vizualizezi oferta'
+        }))
+    return render(request, 'oferta.html')

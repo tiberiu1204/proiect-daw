@@ -1,0 +1,2150 @@
+WARNING 2024-12-10 17:00:23,716 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:00:23,717 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:17:11,402 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:17:11,402 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:17:11,446 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:17:11,446 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:17:14,542 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:17:14,542 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:17:19,278 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:17:19,278 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:17:42,641 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:17:42,641 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+ERROR 2024-12-10 17:23:08,121 log Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 315, in profile_view
+    user_data = request.session['user_data']
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'user_data'
+ERROR 2024-12-10 17:23:08,121 basehttp "GET /profile/ HTTP/1.1" 500 83453
+ERROR 2024-12-10 17:23:15,006 log Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 315, in profile_view
+    user_data = request.session['user_data']
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'user_data'
+ERROR 2024-12-10 17:23:15,006 basehttp "GET /profile/ HTTP/1.1" 500 83453
+WARNING 2024-12-10 17:24:50,970 log Not Found: /admins/
+WARNING 2024-12-10 17:24:50,970 basehttp "GET /admins/ HTTP/1.1" 404 5356
+WARNING 2024-12-10 17:25:00,462 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:25:00,462 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:25:00,489 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:25:00,489 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:25:03,803 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:25:03,803 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:30:11,597 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:30:11,597 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:30:11,616 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:30:11,616 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+ERROR 2024-12-10 17:30:14,946 log Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 315, in profile_view
+    user_data = request.session['user_data']
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/sessions/backends/base.py", line 55, in __getitem__
+    return self._session[key]
+           ~~~~~~~~~~~~~^^^^^
+KeyError: 'user_data'
+ERROR 2024-12-10 17:30:14,947 basehttp "GET /profile/ HTTP/1.1" 500 83453
+WARNING 2024-12-10 17:30:15,022 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:30:15,023 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:32:01,000 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:32:01,001 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:32:01,032 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:32:01,032 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:32:06,834 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:32:06,834 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:32:10,622 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:32:10,622 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:32:10,642 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:32:10,642 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:32:14,730 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:32:14,730 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:32:46,375 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:32:46,376 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:32:46,392 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:32:46,392 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:34:18,354 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:34:18,354 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:34:29,176 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:34:29,176 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:34:29,205 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:34:29,205 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:34:32,956 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:34:32,957 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:34:34,926 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:34:34,926 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+ERROR 2024-12-10 17:35:24,739 log Internal Server Error: /admin/ecommerce/customuser/add/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/backends/base/base.py", line 303, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.ForeignKeyViolation: insert or update on table "django_admin_log" violates foreign key constraint "django_admin_log_user_id_c564eba6_fk_auth_user_id"
+DETAIL:  Key (user_id)=(23) is not present in table "auth_user".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/auth/admin.py", line 120, in add_view
+    with transaction.atomic(using=router.db_for_write(self.model)):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/transaction.py", line 263, in __exit__
+    connection.commit()
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/backends/base/base.py", line 327, in commit
+    self._commit()
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/backends/base/base.py", line 302, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/backends/base/base.py", line 303, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: insert or update on table "django_admin_log" violates foreign key constraint "django_admin_log_user_id_c564eba6_fk_auth_user_id"
+DETAIL:  Key (user_id)=(23) is not present in table "auth_user".
+
+ERROR 2024-12-10 17:35:24,741 basehttp "POST /admin/ecommerce/customuser/add/ HTTP/1.1" 500 161788
+WARNING 2024-12-10 17:35:24,837 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:35:24,837 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:35:24,853 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:35:24,854 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:35:44,077 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:35:44,077 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+ERROR 2024-12-10 17:39:36,086 log Internal Server Error: /admin/ecommerce/customuser/add/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/backends/base/base.py", line 303, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.ForeignKeyViolation: insert or update on table "django_admin_log" violates foreign key constraint "django_admin_log_user_id_c564eba6_fk_auth_user_id"
+DETAIL:  Key (user_id)=(23) is not present in table "auth_user".
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/auth/admin.py", line 120, in add_view
+    with transaction.atomic(using=router.db_for_write(self.model)):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/transaction.py", line 263, in __exit__
+    connection.commit()
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/backends/base/base.py", line 327, in commit
+    self._commit()
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/backends/base/base.py", line 302, in _commit
+    with debug_transaction(self, "COMMIT"), self.wrap_database_errors:
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/backends/base/base.py", line 303, in _commit
+    return self.connection.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: insert or update on table "django_admin_log" violates foreign key constraint "django_admin_log_user_id_c564eba6_fk_auth_user_id"
+DETAIL:  Key (user_id)=(23) is not present in table "auth_user".
+
+ERROR 2024-12-10 17:39:36,087 basehttp "POST /admin/ecommerce/customuser/add/ HTTP/1.1" 500 161798
+WARNING 2024-12-10 17:39:36,184 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:39:36,184 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:39:36,202 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:39:36,202 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:45:20,349 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:46:05,551 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:46:05,551 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:46:05,644 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:46:05,644 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 17:47:22,204 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:47:22,204 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+ERROR 2024-12-10 17:49:00,930 log Internal Server Error: /admin/ecommerce/customuser/26/change/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 839, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/forms/models.py", line 654, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/forms/models.py", line 334, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (extra_field2, extra_field1) specified for CustomUser
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 1855, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/auth/admin.py", line 98, in get_form
+    return super().get_form(request, obj, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 841, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (extra_field2, extra_field1) specified for CustomUser. Check fields/fieldsets/exclude attributes of class CustomUserAdmin.
+ERROR 2024-12-10 17:49:00,931 basehttp "GET /admin/ecommerce/customuser/26/change/?_changelist_filters=q%3Dtataeadmin HTTP/1.1" 500 166606
+WARNING 2024-12-10 17:53:34,430 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:55:04,081 log Not Found: /favicon.ico
+WARNING 2024-12-10 17:55:12,766 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:01:47,131 log Not Found: /adauga_produs/
+WARNING 2024-12-10 18:01:47,131 basehttp "GET /adauga_produs/ HTTP/1.1" 404 5377
+WARNING 2024-12-10 18:02:04,999 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:02:04,999 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:02:05,018 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:02:05,019 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:02:09,493 log Forbidden: /adauga-produs/
+WARNING 2024-12-10 18:02:09,493 basehttp "GET /adauga-produs/ HTTP/1.1" 403 427
+WARNING 2024-12-10 18:02:09,610 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:02:09,611 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:05:29,197 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:05:29,197 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:05:29,215 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:05:29,215 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:15:39,365 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:15:39,365 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:15:39,387 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:15:39,387 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:15:45,111 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:15:45,112 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:16:13,882 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:16:13,882 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:16:14,491 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:16:14,491 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:16:19,858 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:16:19,858 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:16:30,552 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:16:30,553 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:16:34,018 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:16:34,019 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+ERROR 2024-12-10 18:16:50,084 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 71, in filtru_produse
+    Vizualizare.objects.update_or_create(
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 986, in update_or_create
+    obj, created = self.select_for_update().get_or_create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f1bd76f0680>>.
+ERROR 2024-12-10 18:16:50,085 basehttp "GET /produse/ HTTP/1.1" 500 154525
+ERROR 2024-12-10 18:16:53,573 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 71, in filtru_produse
+    Vizualizare.objects.update_or_create(
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 986, in update_or_create
+    obj, created = self.select_for_update().get_or_create(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f1bd7b06d20>>.
+ERROR 2024-12-10 18:16:53,574 basehttp "GET /produse/ HTTP/1.1" 500 154525
+ERROR 2024-12-10 18:17:47,628 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    if request.user.is_authentificated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'is_authentificated'. Did you mean: 'is_authenticated'?
+ERROR 2024-12-10 18:17:47,629 basehttp "GET /produse/ HTTP/1.1" 500 80509
+ERROR 2024-12-10 18:17:48,295 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    if request.user.is_authentificated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'is_authentificated'. Did you mean: 'is_authenticated'?
+ERROR 2024-12-10 18:17:48,296 basehttp "GET /produse/ HTTP/1.1" 500 80509
+ERROR 2024-12-10 18:17:48,479 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    if request.user.is_authentificated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'is_authentificated'. Did you mean: 'is_authenticated'?
+ERROR 2024-12-10 18:17:48,480 basehttp "GET /produse/ HTTP/1.1" 500 80509
+ERROR 2024-12-10 18:17:48,603 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    if request.user.is_authentificated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'is_authentificated'. Did you mean: 'is_authenticated'?
+ERROR 2024-12-10 18:17:48,605 basehttp "GET /produse/ HTTP/1.1" 500 80509
+ERROR 2024-12-10 18:18:34,610 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f22f59ea420>>.
+ERROR 2024-12-10 18:18:34,611 basehttp "GET /produse/ HTTP/1.1" 500 142658
+WARNING 2024-12-10 18:18:34,653 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:18:34,654 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+ERROR 2024-12-10 18:18:35,239 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f22f5962600>>.
+ERROR 2024-12-10 18:18:35,239 basehttp "GET /produse/ HTTP/1.1" 500 142658
+ERROR 2024-12-10 18:18:35,410 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f22f5514ef0>>.
+ERROR 2024-12-10 18:18:35,411 basehttp "GET /produse/ HTTP/1.1" 500 142658
+ERROR 2024-12-10 18:18:35,570 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f22f59635f0>>.
+ERROR 2024-12-10 18:18:35,571 basehttp "GET /produse/ HTTP/1.1" 500 142658
+ERROR 2024-12-10 18:18:35,705 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f22f554e540>>.
+ERROR 2024-12-10 18:18:35,706 basehttp "GET /produse/ HTTP/1.1" 500 142658
+ERROR 2024-12-10 18:18:46,633 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746f738c0>>.
+ERROR 2024-12-10 18:18:46,633 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:47,099 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746fa8bf0>>.
+ERROR 2024-12-10 18:18:47,100 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:47,267 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746feef60>>.
+ERROR 2024-12-10 18:18:47,268 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:47,428 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746ffc0b0>>.
+ERROR 2024-12-10 18:18:47,429 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:47,579 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746fe0710>>.
+ERROR 2024-12-10 18:18:47,580 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:47,704 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746ffe5a0>>.
+ERROR 2024-12-10 18:18:47,705 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:47,844 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746feeb70>>.
+ERROR 2024-12-10 18:18:47,845 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:47,998 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746369cd0>>.
+ERROR 2024-12-10 18:18:47,998 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:48,139 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746ffc350>>.
+ERROR 2024-12-10 18:18:48,140 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:48,323 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746faa3f0>>.
+ERROR 2024-12-10 18:18:48,324 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:48,461 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746368440>>.
+ERROR 2024-12-10 18:18:48,462 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:48,627 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa746fd4620>>.
+ERROR 2024-12-10 18:18:48,628 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:48,800 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fa7463a1ca0>>.
+ERROR 2024-12-10 18:18:48,801 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:51,665 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f4dbcdc2300>>.
+ERROR 2024-12-10 18:18:51,665 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:51,862 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f4dbc920b90>>.
+ERROR 2024-12-10 18:18:51,862 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:51,987 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 70, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f4dbcdf7f20>>.
+ERROR 2024-12-10 18:18:51,988 basehttp "GET /produse/ HTTP/1.1" 500 142477
+ERROR 2024-12-10 18:18:54,794 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f3233b539b0>>.
+ERROR 2024-12-10 18:18:54,795 basehttp "GET /produse/ HTTP/1.1" 500 142533
+ERROR 2024-12-10 18:18:54,973 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f3233ba9ca0>>.
+ERROR 2024-12-10 18:18:54,974 basehttp "GET /produse/ HTTP/1.1" 500 142533
+ERROR 2024-12-10 18:18:55,115 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f323333c500>>.
+ERROR 2024-12-10 18:18:55,116 basehttp "GET /produse/ HTTP/1.1" 500 142533
+WARNING 2024-12-10 18:19:17,794 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:19:17,795 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:19:17,820 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:19:17,820 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+WARNING 2024-12-10 18:19:21,912 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:19:21,912 basehttp "GET /favicon.ico HTTP/1.1" 404 5368
+ERROR 2024-12-10 18:19:33,758 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fb563be3020>>.
+ERROR 2024-12-10 18:19:33,759 basehttp "GET /produse/ HTTP/1.1" 500 142658
+ERROR 2024-12-10 18:20:23,845 log Internal Server Error: /produse/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2123, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'SimpleLazyObject'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 77, in filtru_produse
+    vizualizari = Vizualizare.objects.filter(utilizator=request.user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1555, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/sql/query.py", line 1385, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/db/models/fields/__init__.py", line 2125, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7fb5636d1340>>.
+ERROR 2024-12-10 18:20:23,846 basehttp "GET /produse/ HTTP/1.1" 500 142292
+WARNING 2024-12-10 18:29:25,198 log Not Found: /aloca_permisiune_oferta/
+WARNING 2024-12-10 18:29:25,198 basehttp "POST /aloca_permisiune_oferta/ HTTP/1.1" 404 5408
+WARNING 2024-12-10 18:29:28,537 log Not Found: /aloca_permisiune_oferta/
+WARNING 2024-12-10 18:29:28,538 basehttp "POST /aloca_permisiune_oferta/ HTTP/1.1" 404 5408
+WARNING 2024-12-10 18:29:32,837 log Not Found: /aloca_permisiune_oferta/
+WARNING 2024-12-10 18:29:32,838 basehttp "POST /aloca_permisiune_oferta/ HTTP/1.1" 404 5408
+WARNING 2024-12-10 18:29:56,904 log Not Found: /aloca_permisiune_oferta/
+WARNING 2024-12-10 18:29:56,905 basehttp "POST /aloca_permisiune_oferta/ HTTP/1.1" 404 5408
+WARNING 2024-12-10 18:35:28,769 log Bad Request: /aloca_permisiune_oferta/
+WARNING 2024-12-10 18:35:28,770 basehttp "POST /aloca_permisiune_oferta/ HTTP/1.1" 400 18
+WARNING 2024-12-10 18:35:32,176 log Bad Request: /aloca_permisiune_oferta/
+WARNING 2024-12-10 18:35:32,177 basehttp "POST /aloca_permisiune_oferta/ HTTP/1.1" 400 18
+WARNING 2024-12-10 18:37:52,702 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:37:52,702 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:37:52,719 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:37:52,719 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:37:59,389 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:37:59,389 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:38:05,856 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:38:05,856 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+ERROR 2024-12-10 18:38:07,164 log Internal Server Error: /oferta/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 434, in oferta
+    return render(request, 'oferta.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: oferta.html
+ERROR 2024-12-10 18:38:07,164 basehttp "GET /oferta/ HTTP/1.1" 500 89314
+WARNING 2024-12-10 18:38:07,251 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:38:07,251 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:39:34,286 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:39:34,286 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:39:34,469 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:39:34,469 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+ERROR 2024-12-10 18:39:35,989 log Internal Server Error: /oferta/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 434, in oferta
+    return render(request, 'oferta.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: oferta.html
+ERROR 2024-12-10 18:39:35,990 basehttp "GET /oferta/ HTTP/1.1" 500 89314
+WARNING 2024-12-10 18:39:36,071 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:39:36,071 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:46,379 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:46,380 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:46,431 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:46,432 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:46,642 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:46,642 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:46,863 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:46,863 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:47,035 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:47,035 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:47,230 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:47,230 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:47,837 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:47,837 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:48,017 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:48,018 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:48,184 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:48,185 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:48,500 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:48,500 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:49,251 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:49,252 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:58,052 log Not Found: /ofetra/
+WARNING 2024-12-10 18:40:58,052 basehttp "GET /ofetra/ HTTP/1.1" 404 5900
+WARNING 2024-12-10 18:40:58,088 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:58,088 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:40:58,125 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:40:58,126 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:41:01,060 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:41:01,060 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+ERROR 2024-12-10 18:41:47,678 log Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/views.py", line 319, in logout_view
+    request.user_permissions.remove(permission)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSGIRequest' object has no attribute 'user_permissions'
+ERROR 2024-12-10 18:41:47,680 basehttp "GET /logout/ HTTP/1.1" 500 74786
+WARNING 2024-12-10 18:41:47,774 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:41:47,774 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:42:40,419 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:42:40,420 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:42:47,977 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:42:47,978 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:42:47,995 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:42:47,996 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:42:51,433 log Forbidden: /oferta/
+WARNING 2024-12-10 18:42:51,433 basehttp "GET /oferta/ HTTP/1.1" 403 416
+WARNING 2024-12-10 18:42:51,500 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:42:51,500 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:49:29,385 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:49:29,385 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:49:29,439 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:49:29,440 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:49:32,030 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:49:32,031 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:50:08,624 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:50:08,625 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:50:08,672 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:50:08,672 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:51:25,074 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:51:25,074 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:59:35,623 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:59:35,624 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:59:35,646 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:59:35,646 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 18:59:38,153 log Not Found: /favicon.ico
+WARNING 2024-12-10 18:59:38,153 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 19:09:04,495 log Not Found: /favicon.ico
+WARNING 2024-12-10 19:09:04,495 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+ERROR 2024-12-10 19:28:49,595 log Internal Server Error: /admin/ecommerce/customuser/26/change/
+Traceback (most recent call last):
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 1854, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 406, in get_fieldsets
+    return [(None, {"fields": self.get_fields(request, obj)})]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 397, in get_fields
+    form = self._get_form_for_get_fields(request, obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/venv/lib64/python3.12/site-packages/django/contrib/admin/options.py", line 788, in _get_form_for_get_fields
+    return self.get_form(request, obj, fields=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/admin.py", line 30, in get_form
+    return form(request.POST or None, request.FILES or None, instance=obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tpopescu/Documents/Workspace/Facultate/DAW/proiect/proiectdaw/ecommerce/forms.py", line 207, in __init__
+    super().__init__(*args, **kwargs)
+TypeError: BaseModelForm.__init__() got an unexpected keyword argument 'fields'
+ERROR 2024-12-10 19:28:49,596 basehttp "GET /admin/ecommerce/customuser/26/change/ HTTP/1.1" 500 151553
+WARNING 2024-12-10 19:38:56,428 log Not Found: /favicon.ico
+WARNING 2024-12-10 19:38:57,633 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:02:24,235 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:02:27,586 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:03:27,124 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:03:27,124 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:03:27,138 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:03:27,138 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:03:30,266 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:03:30,267 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:03:33,106 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:03:33,106 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:03:35,429 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:03:35,429 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:04:51,589 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:04:51,589 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:04:51,610 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:04:51,611 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:04:54,451 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:04:54,452 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:04:54,474 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:04:54,474 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:04:58,763 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:04:58,763 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:05:10,317 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:05:10,317 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:05:52,099 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:05:52,100 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:05:52,122 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:05:52,122 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:05:54,747 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:05:54,747 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:05:57,452 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:05:57,452 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:05:59,783 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:05:59,783 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:07:14,700 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:07:14,701 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:07:14,729 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:07:14,729 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:07:18,783 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:07:18,784 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:07:20,243 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:07:20,243 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:07:53,892 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:07:53,892 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:06,115 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:06,116 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:06,138 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:06,138 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:09,681 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:09,681 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:11,289 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:11,290 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:41,544 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:41,545 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:41,597 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:41,597 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:45,790 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:45,790 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:47,650 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:47,650 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:08:50,565 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:08:50,565 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:12:53,799 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:12:53,799 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:12:59,361 log Forbidden: /login/
+WARNING 2024-12-10 20:12:59,361 basehttp "POST /login/ HTTP/1.1" 403 386
+WARNING 2024-12-10 20:12:59,419 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:12:59,419 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
+WARNING 2024-12-10 20:12:59,445 log Not Found: /favicon.ico
+WARNING 2024-12-10 20:12:59,445 basehttp "GET /favicon.ico HTTP/1.1" 404 5912
